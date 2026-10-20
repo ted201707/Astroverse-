@@ -1,0 +1,91 @@
+:root {
+    --cor-fundo: #080f1f;
+    --cor-header: #101b33;
+    --cor-destaque: #f00;
+    --cor-texto: #ffffff;
+}/* variaveis que serão reutilizadas */
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+
+}/* personalização do body */
+
+
+header{ /* personalização header */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--cor-header);
+
+}
+
+header h1{
+    margin: 0;
+    font-size: 28px;
+    color: #f00;
+
+}
+
+
+nav{ /* estilo da barra de navegação */
+    display: flex;
+    gap: 25px;
+
+}
+
+nav a {
+    color:var(--cor-texto);
+    text-decoration:none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+
+}
+
+
+nav a:hover{
+    color:var(--cor-destaque);
+}
+
+
+footer{ /* estilo do rodapé */
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+
+}
+
+@media (max-width:600px) { /* adaptação para dispotisivos moveis */
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+
+    }
+    header h1{
+        font-size: 24px;
+
+    }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+}
+   
