@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    background: #03050d;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.apresentacao-planeta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding: 60px 8%;
+    overflow: hidden;
+    background: radial-gradient(
+        ellipse at 75% 50%,
+        #1b202e 0%,
+        #090d19 45%,
+        #03050d 85%
+    );
+}
+
+.conteudo-planeta {
+    position: relative;
+    z-index: 2;
+    width: 45%;
+    max-width: 550px;
+}
+
+.conteudo-planeta .subtitulo {
+    color: #c4a889;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.conteudo-planeta h1 {
+    font-size: clamp(55px, 8vw, 125px);
+    font-weight: 800;
+    letter-spacing: 8px;
+    line-height: 1;
+    margin: 0 0 30px;
+}
+
+.conteudo-planeta p:not(.subtitulo) {
+    max-width: 430px;
+    color: #b6bdcc;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.botao-explorar {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 32px;
+    border: 1px solid #c4a889;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.botao-explorar:hover {
+    background: #c4a889;
+    color: #03050d;
+    transform: translateY(-3px);
+}
+
+#cena-mercurio {
+    position: absolute;
+    top: 0;
+    right: -8%;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+    cursor: grab;
+}
+
+#cena-mercurio:active {
+    cursor: grabbing;
+}
+
+#cena-mercurio canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.informacoes-planeta {
+    padding: 100px 10%;
+    background: #080b15;
+    text-align: center;
+}
+
+.informacoes-planeta h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    margin-bottom: 25px;
+}
+
+.informacoes-planeta p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #aeb8c8;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+    .apresentacao-planeta {
+        min-height: 850px;
+        align-items: flex-start;
+        padding: 70px 6%;
+    }
+
+    .conteudo-planeta {
+        width: 100%;
+    }
+
+    .conteudo-planeta h1 {
+        font-size: clamp(45px, 10vw, 75px);
+    }
+
+    #cena-mercurio {
+        top: 280px;
+        right: -20%;
+        width: 120%;
+        height: 570px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao-planeta {
+        min-height: 760px;
+    }
+
+    .conteudo-planeta p:not(.subtitulo) {
+        font-size: 15px;
+    }
+
+    #cena-mercurio {
+        top: 350px;
+        right: -35%;
+        width: 145%;
+        height: 420px;
+    }
+
+    .informacoes-planeta {
+        padding: 70px 7%;
+    }
+}
+
+.informacoes-planeta .subtitulo {
+    color: #c4a889;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.introducao-informacoes {
+    max-width: 720px;
+    margin: 0 auto 55px !important;
+}
+
+.grade-estatisticas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1250px;
+    margin: 60px auto 0;
+}
+
+.cartao-estatistica {
+    padding: 35px 25px;
+    background: linear-gradient(
+        145deg,
+        #151a28,
+        #0b0f1b
+    );
+    border: 1px solid rgba(196, 168, 137, 0.15);
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.cartao-estatistica:hover {
+    transform: translateY(-8px);
+    border-color: #c4a889;
+}
+
+.icone-estatistica {
+    display: block;
+    color: #c4a889;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.cartao-estatistica h3 {
+    color: #aeb8c8;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.cartao-estatistica strong {
+    display: block;
+    color: #ffffff;
+    font-size: clamp(19px, 2vw, 27px);
+    margin-bottom: 18px;
+}
+
+.cartao-estatistica p {
+    color: #8f9aab;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .grade-estatisticas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .grade-estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao-estatistica {
+        padding: 28px;
+    }
+}
+
+.curiosidades-planeta {
+    padding: 110px 8%;
+    background: #050711;
+}
+
+.cabecalho-curiosidades {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+.cabecalho-curiosidades .subtitulo {
+    color: #c4a889;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.cabecalho-curiosidades h2 {
+    font-size: clamp(36px, 5vw, 60px);
+    margin: 0 0 20px;
+}
+
+.cabecalho-curiosidades > p:last-child {
+    color: #aeb8c8;
+    line-height: 1.8;
+}
+
+.grade-curiosidades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.cartao-curiosidade {
+    padding: 40px 30px;
+    border: 1px solid #252b3b;
+    border-radius: 12px;
+    background: #0d111e;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.cartao-curiosidade:hover {
+    transform: translateY(-8px);
+    border-color: #c4a889;
+}
+
+.numero-curiosidade {
+    display: block;
+    color: #c4a889;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+.cartao-curiosidade h3 {
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.cartao-curiosidade p {
+    color: #aeb8c8;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.navegacao-planetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 45px 8%;
+    background: #0b0f1b;
+    border-top: 1px solid #252b3b;
+}
+
+.navegacao-planetas a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navegacao-planetas a:hover {
+    color: #c4a889;
+}
+
+.navegacao-planetas span {
+    color: #aeb8c8;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.navegacao-planetas strong {
+    font-size: clamp(22px, 3vw, 36px);
+}
+
+.navegacao-proximo {
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .grade-curiosidades {
+        grid-template-columns: 1fr;
+    }
+
+    .curiosidades-planeta {
+        padding: 75px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacao-planetas {
+        padding: 35px 6%;
+    }
+
+    .navegacao-planetas strong {
+        font-size: 22px;
+    }
+
+    .cartao-curiosidade {
+        padding: 30px 25px;
+    }
+}

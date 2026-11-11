@@ -1,0 +1,255 @@
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 20%, #17264a 0%, transparent 35%),
+        #080f1f;
+    color: #ffffff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cabecalho nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cabecalho nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cabecalho nav a:hover {
+    color: #60a5fa;
+}
+
+.perfil-container {
+    width: min(1000px, 90%);
+    margin: 50px auto;
+}
+
+.perfil-topo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: #101b33;
+    border: 1px solid #263957;
+    border-radius: 18px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    font-size: 2.5rem;
+    box-shadow: 0 0 30px #2563eb50;
+}
+
+.etiqueta {
+    color: #60a5fa;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.perfil-topo h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.perfil-topo p {
+    color: #94a3b8;
+}
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.estatistica-card {
+    padding: 25px 15px;
+    text-align: center;
+    background: #101b33;
+    border: 1px solid #263957;
+    border-radius: 15px;
+}
+
+.estatistica-card span {
+    font-size: 2rem;
+}
+
+.estatistica-card h2 {
+    margin: 12px 0 5px;
+    color: #60a5fa;
+    font-size: 1.8rem;
+}
+
+.estatistica-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.historico {
+    padding: 30px;
+    background: #101b33;
+    border: 1px solid #263957;
+    border-radius: 18px;
+}
+
+.historico-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.historico-cabecalho h2 {
+    margin-top: 10px;
+}
+
+.botao-quiz {
+    padding: 12px 20px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-quiz:hover {
+    background: #60a5fa;
+}
+
+.historico-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    margin-bottom: 12px;
+    background: #080f1f;
+    border: 1px solid #263957;
+    border-radius: 10px;
+}
+
+.historico-item h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.historico-item p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.historico-pontuacao {
+    color: #60a5fa;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.historico-vazio {
+    padding: 25px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.perfil-acoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.botao-secundario,
+.botao-sair {
+    padding: 13px 20px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.botao-secundario {
+    color: #cbd5e1;
+    border: 1px solid #334155;
+}
+
+.botao-sair {
+    color: white;
+    background: #991b1b;
+    border: none;
+}
+
+.botao-sair:hover {
+    background: #dc2626;
+}
+
+.rodape {
+    padding: 25px;
+    text-align: center;
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .cabecalho nav {
+        justify-content: center;
+    }
+
+    .perfil-topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    .historico-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .historico-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .perfil-acoes {
+        flex-direction: column;
+    }
+
+    .perfil-acoes a,
+    .perfil-acoes button {
+        text-align: center;
+    }
+}

@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AstroVerse</title>
+
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/login.css">
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <a href="index.html" class="logo">✦ AstroVerse</a>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="exploracao.html">Exploração</a>
+        <a href="constelacoes.html">Constelações</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="suporte.html">Sobre Nós</a>
+    </nav>
+</header>
+
+<main class="login-container">
+
+    <section class="login-info">
+        <span class="etiqueta">PORTAL ASTRONÔMICO</span>
+
+        <h1>Explore o universo.<br>
+            <span>Faça parte dele.</span>
+        </h1>
+
+        <p>
+            Crie sua conta no AstroVerse e acompanhe sua jornada
+            pelo cosmos.
+        </p>
+
+        <div class="universo-decorativo">
+            <div class="orbita orbita-1"></div>
+            <div class="orbita orbita-2"></div>
+            <div class="planeta"></div>
+        </div>
+    </section>
+
+    <section class="login-card">
+
+        <div id="area-formulario">
+
+            <div class="abas">
+                <button type="button" id="aba-login" class="aba ativa">
+                    Entrar
+                </button>
+
+                <button type="button" id="aba-cadastro" class="aba">
+                    Criar conta
+                </button>
+            </div>
+
+            <div id="form-login">
+                <h2>Bem-vindo de volta!</h2>
+                <p class="subtitulo">Entre para continuar sua exploração.</p>
+
+                <form id="formulario-login">
+
+                    <label for="email-login">E-mail</label>
+                    <input
+                        type="email"
+                        id="email-login"
+                        placeholder="seu@email.com"
+                        required
+                    >
+
+                    <label for="senha-login">Senha</label>
+                    <input
+                        type="password"
+                        id="senha-login"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                    <button type="submit" class="botao-principal">
+                        Entrar na conta
+                    </button>
+                </form>
+            </div>
+
+            <div id="form-cadastro" class="escondido">
+                <h2>Crie sua conta</h2>
+                <p class="subtitulo">Sua jornada pelo universo começa aqui.</p>
+
+                <form id="formulario-cadastro">
+
+                    <label for="nome-cadastro">Nome</label>
+                    <input
+                        type="text"
+                        id="nome-cadastro"
+                        placeholder="Seu nome"
+                        minlength="2"
+                        required
+                    >
+
+                    <label for="email-cadastro">E-mail</label>
+                    <input
+                        type="email"
+                        id="email-cadastro"
+                        placeholder="seu@email.com"
+                        required
+                    >
+
+                    <label for="senha-cadastro">Senha</label>
+                    <input
+                        type="password"
+                        id="senha-cadastro"
+                        placeholder="Mínimo de 6 caracteres"
+                        minlength="6"
+                        required
+                    >
+
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input
+                        type="password"
+                        id="confirmar-senha"
+                        placeholder="Digite a senha novamente"
+                        required
+                    >
+
+                    <button type="submit" class="botao-principal">
+                        Criar minha conta
+                    </button>
+                </form>
+            </div>
+
+            <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+        </div>
+
+        <div id="area-logado" class="escondido">
+            <div class="icone-sucesso">✦</div>
+
+            <h2>Você está conectado!</h2>
+
+            <p class="subtitulo">
+                Bem-vindo ao AstroVerse,
+                <strong id="nome-usuario"></strong>!
+            </p>
+
+            <p>Prepare-se para explorar o universo.</p>
+
+            <a href="index.html" class="botao-principal">
+                Ir para o início
+            </a>
+
+            <button id="botao-sair" class="botao-secundario">
+                Sair da conta
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p>© 2026 AstroVerse | Uma jornada pelo universo.</p>
+</footer>
+
+<script src="JavaScript/login.js"></script>
+
+</body>
+</html>

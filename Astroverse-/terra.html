@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terra | AstroVerse</title>
+
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/mercurio.css">
+    <link rel="stylesheet" href="Css/terra.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">ASTROVERSE</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="apresentacao-planeta">
+
+            <div class="conteudo-planeta">
+    <p class="subtitulo">03 / SISTEMA SOLAR</p>
+
+    <h1>TERRA</h1>
+
+    <p>
+        Nosso lar no Universo. Um planeta repleto de oceanos,
+        continentes e vida, protegido por uma atmosfera
+        que torna sua existência extraordinária.
+    </p>
+
+    <a href="#informacoes" class="botao-explorar">
+        Descobrir a Terra
+    </a>
+</div>
+
+<div id="cena-planeta" data-planeta="terra"></div>
+        </section>
+
+        <section id="informacoes" class="informacoes-planeta">
+
+            <p class="subtitulo">CONHEÇA O PLANETA</p>
+            <h2>Terra em números</h2>
+
+            <p class="introducao-informacoes">
+            A Terra é o terceiro planeta do Sistema Solar e o único mundo conhecido por abrigar vida. Seus oceanos cobrem aproximadamente 71% da superfície, e sua atmosfera ajuda a manter condições adequadas à vida.
+            </p>
+
+            <div class="grade-estatisticas">
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">01</span>
+                    <h3>Diâmetro</h3>
+                    <strong>12.742 km</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">02</span>
+                    <h3>Distância do Sol</h3>
+                    <strong>149,6 milhões de km</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">03</span>
+                    <h3>Rotação</h3>
+                    <strong>23h 56min</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">04</span>
+                    <h3>Temperatura</h3>
+                    <strong>15 °C</strong>
+                    <p>Temperatura média aproximada da superfície.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="curiosidades-planeta">
+
+    <div class="cabecalho-curiosidades">
+        <p class="subtitulo">ALÉM DA SUPERFÍCIE</p>
+        <h2>Você sabia?</h2>
+        <p>
+            Descubra algumas características extraordinárias
+            do nosso planeta.
+        </p>
+    </div>
+
+    <div class="grade-curiosidades">
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">01</span>
+            <h3>O planeta azul</h3>
+            <p>
+                Aproximadamente 71% da superfície terrestre
+                é coberta por água, principalmente pelos oceanos.
+            </p>
+        </article>
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">02</span>
+            <h3>Um escudo invisível</h3>
+            <p>
+                O campo magnético da Terra ajuda a proteger
+                o planeta das partículas carregadas
+                provenientes do Sol.
+            </p>
+        </article>
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">03</span>
+            <h3>Um planeta cheio de vida</h3>
+            <p>
+                A Terra é o único planeta conhecido
+                que abriga vida, graças a uma combinação
+                de água líquida, atmosfera e condições favoráveis.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="navegacao-planetas">
+
+            <a href="venus.html" class="navegacao-anterior">
+                <span>← PLANETA ANTERIOR</span>
+                <strong>Venus</strong>
+            </a>
+
+            <a href="marte.html" class="navegacao-proximo">
+                <span>PRÓXIMO PLANETA →</span>
+                <strong>Marte</strong>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="libs/three.min.js"></script>
+    <script src="JavaScript/textura_terra.js"></script>
+    <script src="JavaScript/planeta.js"></script>
+
+</body>
+</html>

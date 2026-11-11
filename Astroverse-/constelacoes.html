@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroVerse | Constelações</title>
+    <link rel="stylesheet" href="Css/constelacoes.css">
+    <script src="JavaScript/constelacoes.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">✦ AstroVerse</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+            <a href="constelacoes.html" class="ativo">Constelações</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="suporte.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="etiqueta">MAPA CELESTE</span>
+            <h1>Constelações</h1>
+            <p>Explore as figuras que a humanidade desenhou no céu.</p>
+        </section>
+
+        <section class="area-exploracao">
+            <div class="lista-constelacoes">
+                <h2>Escolha uma constelação</h2>
+
+                <button class="cartao-constelacao ativo" data-constelacao="orion">
+                    <span>✦</span>
+                    <div>
+                        <h3>Órion</h3>
+                        <p>O Caçador</p>
+                    </div>
+                </button>
+
+                <button class="cartao-constelacao" data-constelacao="ursa">
+                    <span>✦</span>
+                    <div>
+                        <h3>Ursa Maior</h3>
+                        <p>A Grande Ursa</p>
+                    </div>
+                </button>
+
+                <button class="cartao-constelacao" data-constelacao="crux">
+                    <span>✦</span>
+                    <div>
+                        <h3>Crux</h3>
+                        <p>Cruzeiro do Sul</p>
+                    </div>
+                </button>
+
+                <button class="cartao-constelacao" data-constelacao="cassiopeia">
+                    <span>✦</span>
+                    <div>
+                        <h3>Cassiopeia</h3>
+                        <p>A Rainha</p>
+                    </div>
+                </button>
+            </div>
+
+            <div class="painel-ceu">
+                <div class="estrelas-fundo"></div>
+                <svg id="mapa-estrelas" viewBox="0 0 500 400"></svg>
+                <p class="legenda">Representação ilustrativa das estrelas</p>
+            </div>
+
+            <article class="informacoes">
+                <span class="etiqueta">CONSTELAÇÃO SELECIONADA</span>
+                <h2 id="nome-constelacao">Órion</h2>
+                <p id="nome-popular">O Caçador</p>
+
+                <div class="dados">
+                    <div>
+                        <span>Melhor época</span>
+                        <strong id="epoca">Verão</strong>
+                    </div>
+                    <div>
+                        <span>Estrela principal</span>
+                        <strong id="estrela">Betelgeuse</strong>
+                    </div>
+                </div>
+
+                <p id="descricao">
+                    Órion é uma das constelações mais reconhecidas do céu.
+                </p>
+
+                <button id="botao-curiosidade">Descobrir curiosidade</button>
+                <p id="curiosidade" class="curiosidade escondido"></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>AstroVerse © 2026 — Explore o universo.</p>
+    </footer>
+</body>
+</html>

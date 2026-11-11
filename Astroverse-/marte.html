@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marte | AstroVerse</title>
+
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/mercurio.css">
+    <link rel="stylesheet" href="Css/marte.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">ASTROVERSE</a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="apresentacao-planeta">
+
+            <div class="conteudo-planeta">
+    <p class="subtitulo">04 / SISTEMA SOLAR</p>
+
+    <h1>MARTE</h1>
+
+    <p>
+        Conhecido como o Planeta Vermelho, Marte é um mundo
+        de desertos, vulcões gigantescos e paisagens
+        que despertam a curiosidade da humanidade.
+    </p>
+
+    <a href="#informacoes" class="botao-explorar">
+        Descobrir Marte
+    </a>
+</div>
+
+<div id="cena-planeta" data-planeta="marte"></div>
+
+<div id="cena-planeta" data-planeta="terra"></div>
+        </section>
+
+        <section id="informacoes" class="informacoes-planeta">
+
+            <p class="subtitulo">CONHEÇA O PLANETA</p>
+            <h2>Marte em números</h2>
+
+            <p class="introducao-informacoes">
+            A Terra é o terceiro planeta do Sistema Solar e o único mundo conhecido por abrigar vida. Seus oceanos cobrem aproximadamente 71% da superfície, e sua atmosfera ajuda a manter condições adequadas à vida.
+            </p>
+
+            <div class="grade-estatisticas">
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">01</span>
+                    <h3>Diâmetro</h3>
+                    <strong>6.779 km</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">02</span>
+                    <h3>Distância do Sol</h3>
+                    <strong>227,9 milhões de km</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">03</span>
+                    <h3>Rotação</h3>
+                    <strong>24h 37min</strong>
+                </article>
+
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">04</span>
+                    <h3>Temperatura</h3>
+                    <strong>−65 °C</strong>
+                    <p>Temperatura média aproximada da superfície.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="curiosidades-planeta">
+
+    <section class="curiosidades-planeta">
+
+    <div class="cabecalho-curiosidades">
+        <p class="subtitulo">ALÉM DA SUPERFÍCIE</p>
+        <h2>Você sabia?</h2>
+        <p>Descubra algumas curiosidades sobre o Planeta Vermelho.</p>
+    </div>
+
+    <div class="grade-curiosidades">
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">01</span>
+            <h3>O maior vulcão</h3>
+            <p>
+                Marte abriga o Monte Olimpo, o maior vulcão
+                conhecido do Sistema Solar.
+            </p>
+        </article>
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">02</span>
+            <h3>Um passado com água</h3>
+            <p>
+                Evidências geológicas indicam que Marte
+                já possuiu rios e lagos de água líquida
+                em sua superfície.
+            </p>
+        </article>
+
+        <article class="cartao-curiosidade">
+            <span class="numero-curiosidade">03</span>
+            <h3>Duas pequenas luas</h3>
+            <p>
+                Marte possui dois satélites naturais,
+                chamados Fobos e Deimos.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="navegacao-planetas">
+
+    <a href="terra.html" class="navegacao-anterior">
+        <span>← PLANETA ANTERIOR</span>
+        <strong>Terra</strong>
+    </a>
+
+    <a href="jupiter.html" class="navegacao-proximo">
+        <span>PRÓXIMO PLANETA →</span>
+        <strong>Júpiter</strong>
+    </a>
+
+</section>
+
+    </main>
+
+    <script src="libs/three.min.js"></script>
+    <script src="JavaScript/textura_marte.js"></script>
+    <script src="JavaScript/planeta.js"></script>
+
+</body>
+</html>

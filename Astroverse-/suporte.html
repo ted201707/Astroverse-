@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroVerse | Sobre Nós e Suporte</title>
+    <link rel="stylesheet" href="Css/suporte.css">
+    <script src="JavaScript/suporte.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">✦ AstroVerse</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+            <a href="constelacoes.html">Constelações</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="suporte.html" class="ativo">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-conteudo">
+                <span class="etiqueta">NOSSA MISSÃO</span>
+                <h1>Curiosidade<br>não tem limites.</h1>
+                <p>O AstroVerse nasceu para aproximar pessoas do universo, tornando a astronomia mais acessível, interativa e fascinante.</p>
+                <a href="#sobre" class="botao">Conheça o projeto</a>
+            </div>
+
+            <div class="planeta-hero">
+                <div class="orbita orbita1"></div>
+                <div class="orbita orbita2"></div>
+                <div class="planeta"></div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <span class="etiqueta">SOBRE O ASTROVERSE</span>
+            <h2>Explorar. Aprender. Descobrir.</h2>
+            <p class="introducao">Uma experiência digital dedicada à descoberta do espaço e à curiosidade científica.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <span>🚀</span>
+                    <h3>Missão</h3>
+                    <p>Despertar o interesse pela astronomia através de conteúdos educativos e experiências interativas.</p>
+                </article>
+
+                <article class="card">
+                    <span>🌌</span>
+                    <h3>Visão</h3>
+                    <p>Ser uma plataforma acessível e envolvente para explorar os mistérios do universo.</p>
+                </article>
+
+                <article class="card">
+                    <span>✨</span>
+                    <h3>Valores</h3>
+                    <p>Curiosidade, conhecimento, criatividade, acessibilidade e inovação.</p>
+                </article>
+            </div>
+
+            <blockquote>
+                “O universo está cheio de coisas maravilhosas esperando para serem descobertas.”
+            </blockquote>
+        </section>
+
+        <section id="suporte" class="secao suporte">
+            <span class="etiqueta">CENTRAL DE AJUDA</span>
+            <h2>Como podemos ajudar?</h2>
+            <p class="introducao">Encontre respostas ou envie sua dúvida para nossa equipe.</p>
+
+            <div class="suporte-grid">
+                <div class="faq">
+                    <h3>Perguntas frequentes</h3>
+
+                    <details>
+                        <summary>O que é o AstroVerse?</summary>
+                        <p>É um projeto educativo que apresenta conteúdos de astronomia de forma interativa.</p>
+                    </details>
+
+                    <details>
+                        <summary>O site funciona offline?</summary>
+                        <p>Sim. As páginas e recursos locais podem funcionar sem conexão com a internet.</p>
+                    </details>
+
+                    <details>
+                        <summary>Como explorar os planetas?</summary>
+                        <p>Acesse a página Exploração e selecione o planeta desejado.</p>
+                    </details>
+
+                    <details>
+                        <summary>Como funciona o quiz?</summary>
+                        <p>Responda às perguntas e descubra sua pontuação ao final do desafio.</p>
+                    </details>
+                </div>
+
+                <div class="formulario">
+                    <h3>Entre em contato</h3>
+
+                    
+<form id="form-suporte">
+    <label for="nome">Nome</label>
+    <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        minlength="3"
+        maxlength="60"
+        pattern="[A-Za-zÀ-ÿ ]+"
+        placeholder="Digite seu nome completo"
+    >
+
+    <label for="email">E-mail</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        maxlength="100"
+        placeholder="seu@email.com"
+    >
+
+    <label for="assunto">Assunto</label>
+    <select id="assunto" name="assunto" required>
+        <option value="">Selecione</option>
+        <option value="duvida">Dúvida</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="problema">Problema</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <label for="mensagem-contato">Mensagem</label>
+    <textarea
+        id="mensagem-contato"
+        name="mensagem"
+        required
+        minlength="10"
+        maxlength="1000"
+        rows="5"
+        placeholder="Escreva sua mensagem..."
+    ></textarea>
+
+    <button type="submit" class="botao">Enviar mensagem</button>
+</form>
+
+
+                    <p id="resultado-form" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>AstroVerse © 2026 — Explore o universo.</p>
+    </footer>
+</body>
+</html>

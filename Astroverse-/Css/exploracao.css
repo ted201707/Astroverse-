@@ -1,0 +1,304 @@
+
+.exploracao {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr) 300px;
+    align-items: center;
+    gap: 20px;
+    min-height: 750px;
+    padding: 40px 5%;
+    background: radial-gradient(
+        ellipse at center,
+        #14213d 0%,
+        #080f1f 55%,
+        #030712 100%
+    );
+    overflow: hidden;
+}
+
+.menu-planetas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 2;
+}
+
+.menu-planetas h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.botao-planeta {
+    padding: 14px 18px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #94a3b8;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-planeta:hover {
+    color: #ffffff;
+    background-color: rgba(96, 165, 250, 0.1);
+    transform: translateX(6px);
+}
+
+.botao-planeta.ativo {
+    color: #60a5fa;
+    border-left: 3px solid #60a5fa;
+    background-color: rgba(96, 165, 250, 0.08);
+    font-weight: bold;
+}
+
+.visualizacao-planeta {
+    position: relative;
+    min-width: 0;
+    width: 100%;
+    height: 650px;
+}
+
+#cena-exploracao {
+    width: 100%;
+    height: 100%;
+}
+
+#cena-exploracao canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.detalhes-planeta {
+    z-index: 2;
+    color: #ffffff;
+}
+
+.subtitulo {
+    color: #60a5fa;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#titulo-planeta {
+    font-size: clamp(36px, 4vw, 64px);
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#descricao-planeta {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+#link-planeta {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #60a5fa;
+    color: #080f1f;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#link-planeta:hover {
+    background-color: #93c5fd;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1100px) {
+    .exploracao {
+        grid-template-columns: 150px minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .visualizacao-planeta {
+        height: 500px;
+    }
+
+    .detalhes-planeta {
+        grid-column: 2;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .exploracao {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .menu-planetas {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 8px;
+        padding-bottom: 10px;
+    }
+
+    .menu-planetas h2 {
+        display: none;
+    }
+
+    .botao-planeta {
+        flex-shrink: 0;
+        padding: 10px 14px;
+        text-align: center;
+    }
+
+    .botao-planeta.ativo {
+        border-left: 1px solid #60a5fa;
+        border-bottom: 3px solid #60a5fa;
+    }
+
+    .visualizacao-planeta {
+        height: 350px;
+    }
+
+    .detalhes-planeta {
+        text-align: center;
+        padding: 0 10px 35px;
+    }
+
+    #titulo-planeta {
+        font-size: 36px;
+    }
+
+    #descricao-planeta {
+        font-size: 14px;
+    }
+}
+
+#cena-exploracao canvas {
+    cursor: grab;
+    touch-action: none;
+}
+
+#cena-exploracao canvas:active {
+    cursor: grabbing;
+}
+
+
+.estatisticas-planeta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 15px;
+    margin: 30px 0;
+    padding: 24px 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.estatistica {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.rotulo-estatistica {
+    color: #94a3b8;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
+
+.estatistica strong {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media (max-width: 650px) {
+    .estatisticas-planeta {
+        text-align: left;
+    }
+}
+
+
+.tabela-planetas {
+    padding: 80px 8%;
+    background: #080f1f;
+    text-align: center;
+}
+
+.subtitulo-tabela {
+    color: #60a5fa;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.tabela-planetas h2 {
+    font-size: 35px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.descricao-tabela {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #263957;
+    border-radius: 14px;
+}
+
+.tabela-planetas table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background: #101b33;
+}
+
+.tabela-planetas th {
+    background: #172746;
+    color: #60a5fa;
+    padding: 18px;
+    text-align: center;
+}
+
+.tabela-planetas td {
+    padding: 16px;
+    color: #cbd5e1;
+    border-top: 1px solid #263957;
+    text-align: center;
+}
+
+.tabela-planetas tbody tr {
+    transition: .3s;
+}
+
+.tabela-planetas tbody tr:hover {
+    background: #1a2b49;
+}
+
+.tabela-planetas tbody td:first-child {
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .tabela-planetas {
+        padding: 60px 5%;
+    }
+
+    .tabela-planetas h2 {
+        font-size: 28px;
+    }
+}
+

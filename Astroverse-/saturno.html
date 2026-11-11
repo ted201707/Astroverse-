@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça Saturno, seus impressionantes anéis, características e curiosidades no AstroVerse.">
+    <title>Saturno | AstroVerse</title>
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/mercurio.css">
+    <link rel="stylesheet" href="Css/saturno.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">ASTROVERSE</a>
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao-planeta">
+            <div class="conteudo-planeta">
+                <p class="subtitulo">06 / SISTEMA SOLAR</p>
+                <h1>SATURNO</h1>
+                <p>Famoso por seu impressionante sistema de anéis, Saturno é um gigante gasoso formado principalmente por hidrogênio e hélio.</p>
+                <a href="#informacoes" class="botao-explorar">Descobrir Saturno</a>
+            </div>
+            <div id="cena-planeta" data-planeta="saturno" aria-label="Modelo 3D interativo de Saturno"></div>
+        </section>
+
+        <section id="informacoes" class="informacoes-planeta">
+            <p class="subtitulo">CONHEÇA O PLANETA</p>
+            <h2>Saturno em números</h2>
+            <p class="introducao-informacoes">Saturno é o segundo maior planeta do Sistema Solar. Seus anéis são formados por incontáveis partículas de gelo, poeira e fragmentos rochosos.</p>
+
+            <div class="grade-estatisticas">
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">01</span>
+                    <h3>Diâmetro</h3>
+                    <strong>116.460 km</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">02</span>
+                    <h3>Distância do Sol</h3>
+                    <strong>1,43 bilhão km</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">03</span>
+                    <h3>Duração do dia</h3>
+                    <strong>10h 42min</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">04</span>
+                    <h3>Temperatura média</h3>
+                    <strong>−140 °C</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="curiosidades-planeta">
+            <div class="cabecalho-curiosidades">
+                <p class="subtitulo">ALÉM DA SUPERFÍCIE</p>
+                <h2>Você sabia?</h2>
+                <p>Descubra algumas características surpreendentes de Saturno.</p>
+            </div>
+
+            <div class="grade-curiosidades">
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">01</span>
+                    <h3>Anéis extraordinários</h3>
+                    <p>Seus anéis são compostos principalmente por partículas de gelo e rocha.</p>
+                </article>
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">02</span>
+                    <h3>Baixa densidade</h3>
+                    <p>Sua densidade média é menor que a da água.</p>
+                </article>
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">03</span>
+                    <h3>Lua Titã</h3>
+                    <p>Titã possui lagos e mares de hidrocarbonetos líquidos em sua superfície.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="navegacao-planetas">
+            <a href="jupiter.html" class="navegacao-anterior">
+                <span>← PLANETA ANTERIOR</span>
+                <strong>Júpiter</strong>
+            </a>
+            <a href="urano.html" class="navegacao-proximo">
+                <span>PRÓXIMO PLANETA →</span>
+                <strong>Urano</strong>
+            </a>
+        </section>
+    </main>
+
+    <script src="libs/three.min.js"></script>
+    <script src="JavaScript/textura_saturno.js"></script>
+    <script src="JavaScript/planeta.js"></script>
+</body>
+</html>

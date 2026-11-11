@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil | AstroVerse</title>
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/perfil.css">
+</head>
+<body>
+
+<header class="cabecalho">
+    <a href="index.html" class="logo">✦ AstroVerse</a>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="exploracao.html">Exploração</a>
+        <a href="constelacoes.html">Constelações</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="suporte.html">Sobre Nós</a>
+        <a href="perfil.html">Meu Perfil</a>
+    </nav>
+</header>
+
+<main class="perfil-container">
+
+    <section class="perfil-topo">
+        <div class="avatar">✦</div>
+
+        <div>
+            <span class="etiqueta">CENTRAL DO EXPLORADOR</span>
+            <h1 id="nome-perfil">Carregando...</h1>
+            <p id="email-perfil"></p>
+        </div>
+    </section>
+
+    <section class="estatisticas">
+        <article class="estatistica-card">
+            <span>🏆</span>
+            <h2 id="melhor-pontuacao">0/8</h2>
+            <p>Melhor pontuação</p>
+        </article>
+
+        <article class="estatistica-card">
+            <span>🚀</span>
+            <h2 id="total-quizzes">0</h2>
+            <p>Quizzes realizados</p>
+        </article>
+
+        <article class="estatistica-card">
+            <span>⭐</span>
+            <h2 id="media-acertos">0%</h2>
+            <p>Média de acertos</p>
+        </article>
+    </section>
+
+    <section class="historico">
+        <div class="historico-cabecalho">
+            <div>
+                <span class="etiqueta">SUA JORNADA</span>
+                <h2>Histórico de atividades</h2>
+            </div>
+
+            <a href="quiz.html" class="botao-quiz">Jogar Quiz</a>
+        </div>
+
+        <div id="lista-historico">
+            <p>Carregando histórico...</p>
+        </div>
+    </section>
+
+    <section class="perfil-acoes">
+        <a href="index.html" class="botao-secundario">Voltar ao início</a>
+        <button id="botao-sair" class="botao-sair">Sair da conta</button>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p>© 2026 AstroVerse | Uma jornada pelo universo.</p>
+</footer>
+
+<script src="JavaScript/perfil.js"></script>
+
+</body>
+</html>

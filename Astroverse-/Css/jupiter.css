@@ -1,0 +1,64 @@
+
+.apresentacao-planeta {
+    background: radial-gradient(ellipse at 75% 50%, #503322 0%, #1e1011 45%, #03050d 85%);
+}
+
+.conteudo-planeta .subtitulo,
+.informacoes-planeta .subtitulo,
+.cabecalho-curiosidades .subtitulo,
+.icone-estatistica,
+.numero-curiosidade {
+    color: #d9a66d;
+}
+
+.botao-explorar {
+    border-color: #d9a66d;
+}
+
+.botao-explorar:hover {
+    background: #d9a66d;
+    color: #03050d;
+}
+
+.cartao-estatistica:hover,
+.cartao-curiosidade:hover {
+    border-color: #d9a66d;
+}
+
+#cena-planeta {
+    position: absolute;
+    top: 0;
+    right: -8%;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+    cursor: grab;
+}
+
+#cena-planeta:active {
+    cursor: grabbing;
+}
+
+#cena-planeta canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    #cena-planeta {
+        top: 280px;
+        right: -20%;
+        width: 120%;
+        height: 570px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cena-planeta {
+        top: 350px;
+        right: -35%;
+        width: 145%;
+        height: 420px;
+    }
+}

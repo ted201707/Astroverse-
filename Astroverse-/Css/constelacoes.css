@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080f1f;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecalho {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #101b33;
+    border-bottom: 1px solid #263957;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #cbd5e1;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: #60a5fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.hero {
+    padding: 65px 0 35px;
+    text-align: center;
+}
+
+.etiqueta {
+    color: #60a5fa;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+.area-exploracao {
+    display: grid;
+    grid-template-columns: 230px 1fr 280px;
+    gap: 25px;
+    align-items: stretch;
+    margin: 35px 0 70px;
+}
+
+.lista-constelacoes,
+.informacoes {
+    background: #101b33;
+    padding: 25px;
+    border: 1px solid #263957;
+    border-radius: 18px;
+}
+
+.lista-constelacoes h2 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.cartao-constelacao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #263957;
+    background: #0b1427;
+    color: white;
+    text-align: left;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cartao-constelacao:hover,
+.cartao-constelacao.ativo {
+    border-color: #60a5fa;
+    background: #172b4b;
+}
+
+.cartao-constelacao span {
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.cartao-constelacao h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cartao-constelacao p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.painel-ceu {
+    position: relative;
+    min-height: 430px;
+    background: radial-gradient(circle, #14284a, #080f1f 70%);
+    border: 1px solid #263957;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+#mapa-estrelas {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    position: relative;
+    z-index: 2;
+}
+
+#mapa-estrelas line {
+    stroke: #60a5fa;
+    stroke-width: 1.5;
+    opacity: .65;
+}
+
+#mapa-estrelas circle {
+    fill: #fff;
+    filter: drop-shadow(0 0 5px #60a5fa);
+}
+
+.legenda {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #64748b;
+    z-index: 3;
+}
+
+.informacoes h2 {
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.informacoes > p {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.dados {
+    display: grid;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.dados div {
+    padding: 12px;
+    background: #0b1427;
+    border-radius: 10px;
+}
+
+.dados span,
+.dados strong {
+    display: block;
+}
+
+.dados span {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.dados strong {
+    color: #60a5fa;
+}
+
+#botao-curiosidade {
+    margin-top: 20px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#botao-curiosidade:hover {
+    background: #3b82f6;
+}
+
+.curiosidade {
+    padding: 15px;
+    background: #0b1427;
+    border-left: 3px solid #60a5fa;
+    border-radius: 8px;
+}
+
+.escondido {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #101b33;
+    color: #64748b;
+}
+
+@media (max-width: 1000px) {
+    .area-exploracao {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .painel-ceu {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 650px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .area-exploracao {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-ceu {
+        grid-column: auto;
+    }
+}

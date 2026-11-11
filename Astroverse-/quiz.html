@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroVerse | Quiz</title>
+    <link rel="stylesheet" href="Css/quiz.css">
+    <script src="JavaScript/quiz.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">✦ AstroVerse</a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+            <a href="constelacoes.html">Constelações</a>
+            <a href="quiz.html" class="ativo">Quiz</a>
+            <a href="suporte.html">Sobre Nós</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="etiqueta">DESAFIO ASTRONÔMICO</span>
+            <h1>Quiz do Universo</h1>
+            <p>Teste seus conhecimentos sobre o espaço.</p>
+        </section>
+
+        <section class="quiz">
+            <div class="topo-quiz">
+                <span id="categoria">ASTRONOMIA</span>
+                <span id="contador">Pergunta 1 de 8</span>
+                <div class="usuario-quiz">
+                <p>Explorador conectado: <strong id="usuario-atual">Visitante</strong></p>
+                    <a href="login.html">Acessar conta</a>
+                </div>
+            </div>
+
+            <div class="barra-progresso">
+                <div id="progresso"></div>
+            </div>
+
+            <div id="area-pergunta">
+                <h2 id="pergunta"></h2>
+                <div id="opcoes"></div>
+            </div>
+
+            <p id="mensagem"></p>
+
+            <div class="rodape-quiz">
+                <span>Pontuação: <strong id="pontuacao">0</strong></span>
+                <button id="proximo" disabled>Próxima pergunta →</button>
+            </div>
+
+            <section id="resultado" class="resultado escondido">
+                <div id="icone">🚀</div>
+                <h2 id="titulo-resultado"></h2>
+                <p id="texto-resultado"></p>
+                <h3 id="pontuacao-final"></h3>
+                <button id="reiniciar">Jogar novamente</button>
+            </section>
+            <section class="ranking">
+                <h2>🏆 Ranking dos Exploradores</h2>
+                    <p>Veja quem conseguiu as melhores pontuações!</p>
+
+                <ol id="lista-ranking">
+                    <li>Carregando ranking...</li>
+                </ol>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>AstroVerse © 2026 — Explore o universo.</p>
+    </footer>
+</body>
+</html>

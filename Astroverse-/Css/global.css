@@ -1,0 +1,130 @@
+
+:root {
+    --cor-fundo: #080f1f;
+    --cor-header: #101b33;
+    --cor-destaque: #60a5fa;
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #cbd5e1;
+    --cor-borda: #263955;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: var(--cor-header);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--cor-destaque);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 4px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+nav a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 4px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.15);
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+footer {
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--cor-borda);
+}
+
+footer p {
+    margin: 0;
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 10px 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 6px 10px;
+    }
+}

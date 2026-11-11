@@ -1,0 +1,300 @@
+
+#sistema-solar {
+    min-height: 80vh;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#sistema-solar h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#sistema-solar p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+#cena_3d {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 25px auto 0;
+    display: flex;
+    background-color: #050914;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+#cena_3d canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.controles-planeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#nome-planeta {
+    color: var(--cor-texto);
+    font-size: 24px;
+}
+
+#botao-voltar {
+    padding: 12px 24px;
+    background-color: var(--cor-destaque);
+    color: #080f1f;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botao-voltar:hover {
+    background-color: #93c5fd;
+}
+
+#botao-voltar:focus-visible,
+#link-planeta:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+#botao-voltar[hidden] {
+    display: none;
+}
+
+.painel-planeta {
+    width: calc(100% - 40px);
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--cor-header);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 15px;
+    color: var(--cor-texto);
+}
+
+.painel-planeta[hidden] {
+    display: none;
+}
+
+.painel-planeta h3 {
+    color: var(--cor-destaque);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.painel-planeta p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.informacoes-planeta {
+    margin-top: 20px;
+}
+
+#link-planeta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: var(--cor-destaque);
+    color: #080f1f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#link-planeta:hover {
+    background-color: #93c5fd;
+}
+
+@media (max-width: 768px) {
+    #sistema-solar {
+        padding: 40px 15px;
+    }
+
+    #sistema-solar h2 {
+        font-size: 28px;
+    }
+
+    #cena_3d {
+        height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    #sistema-solar h2 {
+        font-size: 24px;
+    }
+
+    #sistema-solar p {
+        font-size: 16px;
+    }
+
+    #cena_3d {
+        height: 350px;
+    }
+
+    .painel-planeta {
+        padding: 18px;
+    }
+
+    .painel-planeta h3 {
+        font-size: 24px;
+    }
+}
+
+
+.multimidia {
+    padding: 80px 8%;
+    background: #0b1427;
+    text-align: center;
+}
+
+.multimidia h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.descricao-multimidia {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.multimidia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.midia-card {
+    background: #101b33;
+    border: 1px solid #263957;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: left;
+}
+
+.midia-card h3 {
+    color: #60a5fa;
+    margin-bottom: 20px;
+}
+
+.midia-card p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+.midia-card video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.midia-card audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .multimidia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .multimidia {
+        padding: 60px 5%;
+    }
+
+    .multimidia h2 {
+        font-size: 28px;
+    }
+}
+
+
+#cena_3d {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+}
+
+#cena_3d canvas {
+    max-width: 100%;
+}
+
+.multimidia-grid {
+    align-items: stretch;
+}
+
+.midia-card video {
+    display: block;
+    max-height: 420px;
+    object-fit: contain;
+    background: #050914;
+}
+
+.midia-card audio {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #cena_3d {
+        height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cena_3d {
+        height: 350px;
+    }
+
+    .midia-card {
+        padding: 18px;
+    }
+}
+
+#sistema-solar {
+    position: relative;
+}
+
+#botao-camera {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    padding: 12px 20px;
+    border: 1px solid #60a5fa;
+    border-radius: 10px;
+    background: rgba(16, 27, 51, 0.95);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#botao-camera:hover {
+    background: #60a5fa;
+    color: #080f1f;
+}
+
+@media (max-width: 768px) {
+    #botao-camera {
+        top: 10px;
+        right: 10px;
+        padding: 10px 14px;
+    }
+}

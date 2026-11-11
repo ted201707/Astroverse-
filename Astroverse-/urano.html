@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Urano no AstroVerse e descubra suas características, composição e curiosidades.">
+    <title>Urano | AstroVerse</title>
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="Css/mercurio.css">
+    <link rel="stylesheet" href="Css/urano.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">ASTROVERSE</a>
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao-planeta">
+            <div class="conteudo-planeta">
+                <p class="subtitulo">07 / SISTEMA SOLAR</p>
+                <h1>URANO</h1>
+                <p>Um gigante gelado de tonalidade azul-esverdeada. Urano chama a atenção por sua inclinação extrema, que faz o planeta girar praticamente de lado.</p>
+                <a href="#informacoes" class="botao-explorar">Descobrir Urano</a>
+            </div>
+            <div id="cena-planeta" data-planeta="urano" aria-label="Modelo 3D interativo de Urano"></div>
+        </section>
+
+        <section id="informacoes" class="informacoes-planeta">
+            <p class="subtitulo">CONHEÇA O PLANETA</p>
+            <h2>Urano em números</h2>
+            <p class="introducao-informacoes">Urano é composto principalmente por água, amônia e metano em estado fluido sobre um pequeno núcleo rochoso. O metano atmosférico contribui para sua coloração azul-esverdeada.</p>
+
+            <div class="grade-estatisticas">
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">01</span>
+                    <h3>Diâmetro</h3>
+                    <strong>50.724 km</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">02</span>
+                    <h3>Distância do Sol</h3>
+                    <strong>2,87 bilhões km</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">03</span>
+                    <h3>Duração do dia</h3>
+                    <strong>17h 14min</strong>
+                </article>
+                <article class="cartao-estatistica">
+                    <span class="icone-estatistica">04</span>
+                    <h3>Temperatura média</h3>
+                    <strong>−195 °C</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="curiosidades-planeta">
+            <div class="cabecalho-curiosidades">
+                <p class="subtitulo">ALÉM DA SUPERFÍCIE</p>
+                <h2>Você sabia?</h2>
+                <p>Descubra algumas características surpreendentes de Urano.</p>
+            </div>
+
+            <div class="grade-curiosidades">
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">01</span>
+                    <h3>Gira de lado</h3>
+                    <p>Seu eixo de rotação é inclinado em aproximadamente 98 graus.</p>
+                </article>
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">02</span>
+                    <h3>Gigante gelado</h3>
+                    <p>Urano é classificado como gigante gelado por sua composição.</p>
+                </article>
+                <article class="cartao-curiosidade">
+                    <span class="numero-curiosidade">03</span>
+                    <h3>Anéis discretos</h3>
+                    <p>Urano possui um sistema de anéis escuros e estreitos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="navegacao-planetas">
+            <a href="saturno.html" class="navegacao-anterior">
+                <span>← PLANETA ANTERIOR</span>
+                <strong>Saturno</strong>
+            </a>
+            <a href="netuno.html" class="navegacao-proximo">
+                <span>PRÓXIMO PLANETA →</span>
+                <strong>Netuno</strong>
+            </a>
+        </section>
+    </main>
+
+    <script src="libs/three.min.js"></script>
+    <script src="JavaScript/textura_urano.js"></script>
+    <script src="JavaScript/planeta.js"></script>
+</body>
+</html>
