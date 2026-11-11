@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o Sistema Solar, conheça os planetas e descubra curiosidades sobre o universo com o AstroVerse.">
+    <title>AstroVerse | Explore o Universo</title>
+    <link rel="stylesheet" href="Css/global.css?v=2">
+    <link rel="stylesheet" href="Css/home.css?v=2">
+</head>
+
+<body>
+    <header>
+        <h1>AstroVerse</h1>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="exploracao.html">Exploração</a>
+            <a href="constelacoes.html">Constelações</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="suporte.html">Sobre Nós</a>
+            <a href="login.html">Login</a>
+            <a href="perfil.html">Meu Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sistema-solar">
+            <button id="botao-camera" type="button" onclick="restaurarCamera()">
+                Restaurar câmera
+            </button>
+            <h2>Explore o Sistema Solar</h2>
+            <p>Clique em um planeta para descobrir seus mistérios.</p>
+
+            <div id="cena_3d" aria-label="Visualização interativa do Sistema Solar"></div>
+
+            <div class="controles-planeta">
+                <h2 id="nome-planeta">Sistema Solar</h2>
+
+                <button id="botao-voltar" type="button" hidden>
+                    Voltar ao Sistema Solar
+                </button>
+            </div>
+        </section>
+
+        <section id="painel-planeta" class="painel-planeta" hidden>
+            <h3 id="titulo-planeta"></h3>
+            <p id="descricao-planeta"></p>
+
+            <div class="informacoes-planeta">
+                <p><strong>Tipo:</strong> <span id="tipo-planeta"></span></p>
+                <p><strong>Diâmetro:</strong> <span id="diametro-planeta"></span></p>
+                <p><strong>Temperatura:</strong> <span id="temperatura-planeta"></span></p>
+            </div>
+
+            <a id="link-planeta" href="exploracao.html">
+                Explorar planeta
+            </a>
+        </section>
+    </main>
+
+
+<section class="multimidia">
+    <p class="etiqueta">EXPERIÊNCIA IMERSIVA</p>
+    <h2>Explore o Universo</h2>
+    <p class="descricao-multimidia">
+        Descubra a beleza do Sistema Solar através de uma experiência visual e sonora.
+    </p>
+
+    <div class="multimidia-grid">
+        <div class="midia-card">
+            <h3>Vídeo: Sistema Solar</h3>
+            <video controls preload="metadata" poster="img/sol.jpg">
+                    <source src="video/sistema-solar.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+            </video>
+
+        </div>
+
+        <div class="midia-card">
+            <h3>Áudio: Ambiente Espacial</h3>
+            <p>Uma atmosfera sonora para acompanhar sua exploração.</p>
+            <audio controls preload="metadata">
+                <source src="audio/ambiente-espacial.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio HTML5.
+            </audio>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>AstroVerse - Projeto de Desenvolvimento Web</p>
+    </footer>
+
+    <script src="libs/three.min.js" defer></script>
+    <script src="JavaScript/textura_sol.js" defer></script>
+    <script src="JavaScript/textura_mercurio.js" defer></script>
+    <script src="JavaScript/textura_venus.js" defer></script>
+    <script src="JavaScript/textura_terra.js" defer></script>
+    <script src="JavaScript/textura_marte.js" defer></script>
+    <script src="JavaScript/textura_jupiter.js" defer></script>
+    <script src="JavaScript/textura_saturno.js" defer></script>
+    <script src="JavaScript/textura_neptuno.js" defer></script>
+    <script src="JavaScript/textura_urano.js" defer></script>
+    <script src="JavaScript/home.js" defer></script>
+</body>
+</html>
